@@ -1,69 +1,64 @@
-<section class="carrossel">
-    <h2 class="carrossel__titulo">Novos lançamentos</h2>
-    <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <img src="img/Apachekafka.svg" alt="Livro sobre Apache Kafka e Spring Boot da Alura Books">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .livro {
+            text-align: center;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 250px;
+        }
+        .livro img {
+            max-width: 100%;
+            height: auto;
+        }
+        .livro h3 {
+            margin-top: 10px;
+        }
+        .livro .preco {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .livro .comprar-btn {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .livro .comprar-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Livraria Online</h1>
+    </header>
+    <div class="container">
+        <div class="livro">
+            <img src="livro1.jpg" alt="Livro 1">
+            <h3>Livro 1</h3>
+            <a href="#" class="comprar-btn">Reservar</a>
         </div>
-        <div class="swiper-slide">
-          <img src="img/Liderança.svg" alt="Livro sobre liderança em design da Alura Books">
+        <div class="livro">
+            <img src="livro2.jpg" alt="Livro 2">
+            <h3>Livro 2</h3>
+            <a href="#" class="comprar-btn">Reservar</a>
         </div>
-        <div class="swiper-slide">
-          <img src="img/Javascript.svg" alt="Livro sobre JavaScript assertivo da Alura Books">
+        <div class="livro">
+            <img src="livro3.jpg" alt="Livro 3">
+            <h3>Livro 3</h3>
+            <a href="#" class="comprar-btn">Reservar</a>
         </div>
-        <div class="swiper-slide">
-          <img src="img/Guia Front-end.svg" alt="Livro Guia Front-end">
-        </div>
-        <div class="swiper-slide">
-          <img src="img/Portugol.svg" alt="Livro sobre Portugol">
-        </div>
-        <div class="swiper-slide">
-          <img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade">
-        </div>
-      </div>
-  
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+        <!-- Adicionar mais livros conforme necessário -->
     </div>
-  
-    <div class="card">
-      <div class="card__descrição">
-        <div class="descrição">
-          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
-          <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
-          <p class="descrição__texto">
-            Construindo uma aplicação integrada com a plataforma do Google.
-          </p>
-          <!-- Formulário de reserva -->
-          <form action="#" class="reserva-form">
-            <label for="nome">Seu nome:</label>
-            <input type="text" id="nome" name="nome" required>
-  
-            <label for="copias">Número de cópias:</label>
-            <input type="number" id="copias" name="copias" value="1" min="1" required>
-  
-            <button type="submit" class="botões__ancora">Reservar</button>
-          </form>
-          <!-- Fim do formulário de reserva -->
-        </div>
-        <img src="img/Angular.svg" class="descrição__imagem" />
-      </div>
-  
-      <div class="card__botões">
-        <ul class="botões">
-          <li class="botões__item">
-            <img src="img/Favoritos.svg" alt="Favoritar livro" />
-          </li>
-          <li class="botões__item">
-            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
-          </li>
-        </ul>
-        <a href="#" class="botões__ancora">Saiba mais</a>
-      </div>
-    </div>
-  </section>
-  
+</body>
+</html>
