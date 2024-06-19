@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livraria Online</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .livro {
+            text-align: center;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 250px;
+        }
+        .livro img {
+            max-width: 100%;
+            height: auto;
+        }
+        .livro h3 {
+            margin-top: 10px;
+        }
+        .livro .preco {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .livro .comprar-btn {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .livro .comprar-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,14 +46,20 @@
         <div class="livro">
             <img src="livro1.jpg" alt="Livro 1">
             <h3>Livro 1</h3>
+            <p class="preco">R$ 29,90</p>
+            <a href="#" class="comprar-btn">Comprar</a>
         </div>
         <div class="livro">
             <img src="livro2.jpg" alt="Livro 2">
             <h3>Livro 2</h3>
+            <p class="preco">R$ 24,50</p>
+            <a href="#" class="comprar-btn">Comprar</a>
         </div>
         <div class="livro">
             <img src="livro3.jpg" alt="Livro 3">
             <h3>Livro 3</h3>
+            <p class="preco">R$ 19,99</p>
+            <a href="#" class="comprar-btn">Comprar</a>
         </div>
         <!-- Adicionar mais livros conforme necessário -->
     </div>
