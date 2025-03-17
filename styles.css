@@ -1,25 +1,39 @@
-@import url("styles/header.css");
-@import url("styles/banner.css");
-@import url("styles/carrossel.css");
-@import url("styles/topicos.css");
-@import url("styles/contato.css");
-@import url("styles/rodapé.css");
-
-
-:root {
-    --cor-de-fundo: #ffffff;
-    --branco: #ffffff;
-    --laranja: #002fff;
-    --azul-degrade: linear-gradient(97.54deg, #0e1642 35.49%, #1f4968 165.37%);
-    --fonte-principal: "Poppins";
-    --azul: #002F52;
-    --fonte-secundario: "Josefin Sans";
-    --preto: #07487e;
-}
-
-body {
-    background-color: var(--cor-de-fundo);
-    font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 400;
-}
+/* Estilos de Acessibilidade */
+#opcoes-acessibilidade {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    display: none;
+    flex-direction: column;
+  }
+  
+  #opcoes-acessibilidade.apresenta-lista {
+    display: flex;
+  }
+  
+  #botao-acessibilidade {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  body.alto-contraste {
+    background-color: black;
+    color: white;
+  }
+  
+  body {
+    font-size: 1rem;
+    transition: font-size 0.3s ease;
+  }
+  
